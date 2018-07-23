@@ -22,8 +22,8 @@
 @implementation ZMFEntryDetailViewController
 
 #pragma mark - Life Cycle Methods
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self updateViews];
 }
 
@@ -34,8 +34,8 @@
         [[ZMFEntryController sharedController] updateEntry:self.entry withTitle:self.titleTF.text andBodyText:self.bodyTextTV.text];
     } else {
         [[ZMFEntryController sharedController] createEntryWithTitle:self.titleTF.text bodyText:self.bodyTextTV.text];
-        [[self navigationController] popViewControllerAnimated:YES];
     }
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 
 - (IBAction)clearButtonPressed:(UIButton *)sender {

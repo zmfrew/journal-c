@@ -18,6 +18,5 @@
 - (void) createEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
 - (void) updateEntry:(ZMFEntry *)entry withTitle:(NSString *)title andBodyText:(NSString *)bodyText;
 - (void) deleteEntry:(ZMFEntry *)entry;
-- (NSString *)formatDateAsString:(NSDate *)date;
 
 @end

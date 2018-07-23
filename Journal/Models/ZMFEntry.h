@@ -19,4 +19,6 @@
 - (instancetype) initWithTitle:(NSString *)title
                       bodyText:(NSString *)bodyText;
 
++ (NSString *)dateToString:(NSDate *)date;
+
 @end

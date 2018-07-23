@@ -32,7 +32,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EntryCell" forIndexPath:indexPath];
     ZMFEntry *entry = [[ZMFEntryController sharedController] entries][indexPath.row];
     cell.textLabel.text = entry.title;
-//    cell.detailTextLabel.text = [entry.timestamp formatDateAsString];
+    NSString *dateString = [ZMFEntry dateToString: entry.timestamp];
+    cell.detailTextLabel.text = dateString;
     
     return cell;
 }
