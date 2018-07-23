@@ -17,7 +17,12 @@
 @property (nonatomic, strong) NSDate* timestamp;
 
 - (instancetype) initWithTitle:(NSString *)title
-                      bodyText:(NSString *)bodyText;
+                      bodyText:(NSString *)bodyText
+                     timestamp:(NSDate *)timestamp;
+
+- (instancetype) initWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)dictionaryCopy;
+
 
 + (NSString *)dateToString:(NSDate *)date;
 

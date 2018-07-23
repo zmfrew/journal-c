@@ -19,4 +19,7 @@
 - (void) updateEntry:(ZMFEntry *)entry withTitle:(NSString *)title andBodyText:(NSString *)bodyText;
 - (void) deleteEntry:(ZMFEntry *)entry;
 
+- (void) saveToPersistentStore;
+- (void) loadFromPersistentStore;
+
 @end

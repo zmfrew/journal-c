@@ -8,17 +8,43 @@
 
 #import "ZMFEntry.h"
 
+#pragma mark - Properties
+static NSString *const TimestampKey = @"timestamp";
+static NSString *const TitleKey = @"title";
+static NSString *const BodyTextKey = @"bodyText";
+
 @implementation ZMFEntry
 
-- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText
+#pragma mark - Initializers
+
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText timestamp:(NSDate *)timestamp
 {
     self = [super init];
     if (self) {
         _title = title;
         _bodyText = bodyText;
-        _timestamp = [NSDate new];
+        _timestamp = timestamp;
     }
     return self;
+}
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+{
+    NSString *title = dictionary[TitleKey];
+    NSString *bodyText = dictionary[BodyTextKey];
+    NSDate *timestamp = dictionary[TimestampKey];
+    return [self initWithTitle:title bodyText:bodyText timestamp:timestamp];
+}
+
+#pragma mark - Methods
+-(NSDictionary *)dictionaryCopy
+{
+    NSDictionary *dictionary = @{
+        TitleKey : self.title,
+        BodyTextKey : self.bodyText,
+        TimestampKey : self.timestamp
+    };
+    return dictionary;
 }
 
 - (BOOL)isEqual:(id)object

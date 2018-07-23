@@ -10,7 +10,7 @@
 #import "ZMFEntryController.h"
 #import "ZMFEntry.h"
 
-@interface ZMFEntryDetailViewController ()
+@interface ZMFEntryDetailViewController () <UITextFieldDelegate>
 
 #pragma mark - Outlets
 
@@ -51,6 +51,13 @@
         self.titleTF.text = self.entry.title;
         self.bodyTextTV.text = self.entry.bodyText;
     }
+}
+
+#pragma mark - UITextFieldDelegate Conformance
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
