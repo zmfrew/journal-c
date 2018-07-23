@@ -12,6 +12,7 @@
 		B623EC462106716E0003E359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B623EC452106716E0003E359 /* Assets.xcassets */; };
 		B623EC492106716E0003E359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B623EC472106716E0003E359 /* LaunchScreen.storyboard */; };
 		B623EC4C2106716E0003E359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC4B2106716E0003E359 /* main.m */; };
+		B623EC5A210674380003E359 /* ZMFEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC59210674380003E359 /* ZMFEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		B623EC482106716E0003E359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B623EC4A2106716E0003E359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B623EC4B2106716E0003E359 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B623EC58210674380003E359 /* ZMFEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntry.h; sourceTree = "<group>"; };
+		B623EC59210674380003E359 /* ZMFEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 		B623EC56210671AC0003E359 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B623EC58210674380003E359 /* ZMFEntry.h */,
+				B623EC59210674380003E359 /* ZMFEntry.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 		B623EC312106716D0003E359 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZMF;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Zachary Frew";
 				TargetAttributes = {
@@ -184,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B623EC5A210674380003E359 /* ZMFEntry.m in Sources */,
 				B623EC4C2106716E0003E359 /* main.m in Sources */,
 				B623EC3E2106716D0003E359 /* AppDelegate.m in Sources */,
 			);
