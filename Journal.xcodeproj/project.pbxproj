@@ -13,6 +13,7 @@
 		B623EC492106716E0003E359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B623EC472106716E0003E359 /* LaunchScreen.storyboard */; };
 		B623EC4C2106716E0003E359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC4B2106716E0003E359 /* main.m */; };
 		B623EC5A210674380003E359 /* ZMFEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC59210674380003E359 /* ZMFEntry.m */; };
+		B623EC5D2106771E0003E359 /* ZMFEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC5C2106771E0003E359 /* ZMFEntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B623EC4B2106716E0003E359 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B623EC58210674380003E359 /* ZMFEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntry.h; sourceTree = "<group>"; };
 		B623EC59210674380003E359 /* ZMFEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntry.m; sourceTree = "<group>"; };
+		B623EC5B2106771E0003E359 /* ZMFEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntryController.h; sourceTree = "<group>"; };
+		B623EC5C2106771E0003E359 /* ZMFEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		B623EC54210671A20003E359 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B623EC5B2106771E0003E359 /* ZMFEntryController.h */,
+				B623EC5C2106771E0003E359 /* ZMFEntryController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			files = (
 				B623EC5A210674380003E359 /* ZMFEntry.m in Sources */,
 				B623EC4C2106716E0003E359 /* main.m in Sources */,
+				B623EC5D2106771E0003E359 /* ZMFEntryController.m in Sources */,
 				B623EC3E2106716D0003E359 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

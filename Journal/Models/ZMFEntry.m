@@ -10,7 +10,7 @@
 
 @implementation ZMFEntry
 
-- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText timestamp:(NSDate *)timestamp
+- (instancetype)initWithTitle:(NSString *)title bodyText:(NSString *)bodyText
 {
     self = [super init];
     if (self) {
