@@ -59,4 +59,12 @@
     [self.internalEntries removeObject:entry];
 }
 
+- (NSString *)formatDateAsString:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMM dd yyyy"];
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    return dateString;
+}
+
 @end

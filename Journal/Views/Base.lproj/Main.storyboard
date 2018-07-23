@@ -13,13 +13,13 @@
         <!--Journal-->
         <scene sceneID="SeR-R7-gYg">
             <objects>
-                <tableViewController id="fr3-4j-fkH" sceneMemberID="viewController">
+                <tableViewController id="fr3-4j-fkH" customClass="ZMFEntriesListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YaM-hP-FiU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournalCell" textLabel="1ca-Ig-GNy" detailTextLabel="jTP-n5-W3R" rowHeight="53" style="IBUITableViewCellStyleValue1" id="Br6-Jf-dUp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" textLabel="1ca-Ig-GNy" detailTextLabel="jTP-n5-W3R" rowHeight="53" style="IBUITableViewCellStyleValue1" id="Br6-Jf-dUp">
                                 <rect key="frame" x="0.0" y="28" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Br6-Jf-dUp" id="VlZ-Ro-ebn">
@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KlQ-Rx-MpK" kind="show" identifier="ToDetailView" id="mCC-Eb-sg6"/>
+                                    <segue destination="KlQ-Rx-MpK" kind="show" identifier="ToDetailView" id="9Vj-qK-G7q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,25 +64,25 @@
             </objects>
             <point key="canvasLocation" x="820" y="156.97151424287858"/>
         </scene>
-        <!--(title)-->
+        <!--Entry Detail View Controller-->
         <scene sceneID="ZFO-rM-dLY">
             <objects>
-                <viewController id="KlQ-Rx-MpK" sceneMemberID="viewController">
+                <viewController id="KlQ-Rx-MpK" customClass="ZMFEntryDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sYH-b7-O2K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="UR1-bt-5Y4">
-                                <rect key="frame" x="10" y="126" width="355" height="511"/>
+                                <rect key="frame" x="10" y="126" width="355" height="471"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter title..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99K-Rt-TUa">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hns-hh-Upr">
-                                        <rect key="frame" x="0.0" y="70" width="355" height="441"/>
+                                        <rect key="frame" x="0.0" y="90" width="355" height="381"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -91,29 +91,42 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj6-Pl-FMj">
-                                <rect key="frame" x="10" y="647" width="355" height="0.0"/>
+                                <rect key="frame" x="10" y="617" width="355" height="30"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d0e-66-iRq"/>
+                                </constraints>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="KlQ-Rx-MpK" eventType="touchUpInside" id="YwY-5i-0NO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rj6-Pl-FMj" firstAttribute="leading" secondItem="Obt-bh-yQs" secondAttribute="leading" constant="10" id="8ut-JO-rO1"/>
                             <constraint firstItem="UR1-bt-5Y4" firstAttribute="top" secondItem="Obt-bh-yQs" secondAttribute="top" constant="10" id="LR6-b8-wyv"/>
-                            <constraint firstItem="rj6-Pl-FMj" firstAttribute="top" secondItem="UR1-bt-5Y4" secondAttribute="bottom" constant="10" id="TWi-Rh-iuh"/>
+                            <constraint firstItem="rj6-Pl-FMj" firstAttribute="top" secondItem="UR1-bt-5Y4" secondAttribute="bottom" constant="20" id="TWi-Rh-iuh"/>
                             <constraint firstItem="UR1-bt-5Y4" firstAttribute="leading" secondItem="Obt-bh-yQs" secondAttribute="leading" constant="10" id="Ysa-WB-E3y"/>
                             <constraint firstItem="Obt-bh-yQs" firstAttribute="trailing" secondItem="rj6-Pl-FMj" secondAttribute="trailing" constant="10" id="hxX-n3-w0X"/>
-                            <constraint firstItem="rj6-Pl-FMj" firstAttribute="top" secondItem="UR1-bt-5Y4" secondAttribute="bottom" constant="10" id="nd9-hw-mZe"/>
                             <constraint firstItem="Obt-bh-yQs" firstAttribute="bottom" secondItem="rj6-Pl-FMj" secondAttribute="bottom" constant="20" id="qSr-DD-vgW"/>
                             <constraint firstItem="UR1-bt-5Y4" firstAttribute="centerX" secondItem="sYH-b7-O2K" secondAttribute="centerX" id="yDt-ro-aXW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Obt-bh-yQs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="(title)" id="qai-u0-ttr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tko-TS-tMQ"/>
+                    <navigationItem key="navigationItem" id="qai-u0-ttr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tko-TS-tMQ">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="KlQ-Rx-MpK" id="4AB-et-21S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextTV" destination="hns-hh-Upr" id="XV6-nT-kol"/>
+                        <outlet property="titleTF" destination="99K-Rt-TUa" id="qC9-LC-Be6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJv-N0-cuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +152,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mCC-Eb-sg6"/>
+        <segue reference="9Vj-qK-G7q"/>
     </inferredMetricsTieBreakers>
 </document>

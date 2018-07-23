@@ -14,6 +14,8 @@
 		B623EC4C2106716E0003E359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC4B2106716E0003E359 /* main.m */; };
 		B623EC5A210674380003E359 /* ZMFEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC59210674380003E359 /* ZMFEntry.m */; };
 		B623EC5D2106771E0003E359 /* ZMFEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC5C2106771E0003E359 /* ZMFEntryController.m */; };
+		B623EC6021067ABB0003E359 /* ZMFEntriesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC5F21067ABB0003E359 /* ZMFEntriesListTableViewController.m */; };
+		B623EC6621067F670003E359 /* ZMFEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623EC6521067F670003E359 /* ZMFEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		B623EC59210674380003E359 /* ZMFEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntry.m; sourceTree = "<group>"; };
 		B623EC5B2106771E0003E359 /* ZMFEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntryController.h; sourceTree = "<group>"; };
 		B623EC5C2106771E0003E359 /* ZMFEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntryController.m; sourceTree = "<group>"; };
+		B623EC5E21067ABB0003E359 /* ZMFEntriesListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntriesListTableViewController.h; sourceTree = "<group>"; };
+		B623EC5F21067ABB0003E359 /* ZMFEntriesListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntriesListTableViewController.m; sourceTree = "<group>"; };
+		B623EC6421067F670003E359 /* ZMFEntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFEntryDetailViewController.h; sourceTree = "<group>"; };
+		B623EC6521067F670003E359 /* ZMFEntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		B623EC532106719D0003E359 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B623EC5E21067ABB0003E359 /* ZMFEntriesListTableViewController.h */,
+				B623EC5F21067ABB0003E359 /* ZMFEntriesListTableViewController.m */,
+				B623EC6421067F670003E359 /* ZMFEntryDetailViewController.h */,
+				B623EC6521067F670003E359 /* ZMFEntryDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,7 +207,9 @@
 			files = (
 				B623EC5A210674380003E359 /* ZMFEntry.m in Sources */,
 				B623EC4C2106716E0003E359 /* main.m in Sources */,
+				B623EC6021067ABB0003E359 /* ZMFEntriesListTableViewController.m in Sources */,
 				B623EC5D2106771E0003E359 /* ZMFEntryController.m in Sources */,
+				B623EC6621067F670003E359 /* ZMFEntryDetailViewController.m in Sources */,
 				B623EC3E2106716D0003E359 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
